@@ -4,7 +4,7 @@
   "description": "Отзывы на карте с помощью Yandex Maps API и Node.js сервера",
   "main": "index.mjs",
   "scripts": {
-    "deploy": "npm install & npm run build",
+    "deploy": "npm run build",
     "build": "webpack --mode production --progress",
     "serve": "webpack serve --mode development --open --progress",
     "api": "node ../geo-review-backend/index.mjs",
