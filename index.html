@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+</head>
+
+<body>
+  <div id="map" class="map"></div>
+
+  <script type="template" id="formTemplate">
+      <div class="reviews"></div>
+      <form class="form" data-role="review-form">
+        <h3 class="form__title">Отзыв:</h3>
+        <input class="form__input" data-role="review-name" type="text" placeholder="Укажите ваше имя" required/>
+        <input class="form__input" data-role="review-place" type="text" placeholder="Укажите место" required/>
+        <textarea class="form__input" data-role="review-text" rows="5" placeholder="Оставить отзыв" required></textarea>
+        <div form__footer>
+          <button class="form__button button" data-role="review-add">Добавить</button>
+          <span class="form__error"></span>
+        </div>
+      </form>
+  </script>
+</body>
+
+</html>

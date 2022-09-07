@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #c4c4c4 !important;
+    border-left-width: 14px !important;
+    border-right-width: 0 !important;
+  }
+}
+
+body {
+  position: relative;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin: 0;
+}
+
+button {
+  padding: 12px 18px;
+  border-radius: 3px;
+  border: none;
+  background: #ff8663;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+
+  &:hover {
+    background: #ff5d2f;
+  }
+}
+
+ymaps[class$='-content__header'],
+ymaps[class$='-content__body'] {
+  margin-bottom: 0;
+}
+
+ymaps[class$='cluster-carousel__content'] {
+  overflow: hidden;
+}
+
+.map {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.reviewform-header {
+  font-size: 14px;
+  font-weight: normal;
+  padding-top: 10px;
+  padding-bottom: 16px;
+  margin-left: 8px;
+  color: #ff8663;
+  width: 310px;
+  border-bottom: 1px solid #e7e7e7;
+
+  &--carousel {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    margin-left: 0;
+
+    &:hover {
+      overflow: visible;
+      white-space: normal;
+      color: #ff5d2f;
+    }
+  }
+}
+
+.reviews {
+  max-height: 121px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  margin-left: 8px;
+
+  &--filled {
+    border-bottom: 1px solid #e7e7e7;
+  }
+
+  &__item {
+    &:first-child {
+      margin-top: 16px;
+    }
+
+    margin-bottom: 16px;
+  }
+}
+
+.review {
+  font-size: 16px;
+  color: #8f8f8f;
+
+  &--carousel {
+    max-height: 134px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-bottom: 0;
+    padding-bottom: 16px;
+
+    &:first-child {
+      margin-top: 0;
+      padding-top: 16px;
+    }
+  }
+
+  &__header {
+    margin-bottom: 2px;
+
+    & span {
+      color: #000;
+    }
+  }
+
+  &__text {
+    margin: 0;
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  background: #fff;
+  padding: 0 0 10px 8px;
+
+  &__title {
+    color: #000;
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  &__input {
+    color: #000;
+    font-family: inherit;
+    font-size: 14px;
+    margin-bottom: 10px;
+    padding: 11px;
+    border: 1px solid #cfcfcf;
+    border-radius: 3px;
+
+    &:focus {
+      outline: none;
+      border: 1px solid #1371c8;
+    }
+
+    &::placeholder {
+      color: #8f8f8f;
+    }
+
+    &[data-role='review-text'] {
+      height: 100px;
+      margin-bottom: 20px;
+      resize: none;
+    }
+  }
+
+  &__button {
+    margin-right: 10px;
+  }
+
+  &__error {
+    color: #ff264a;
+    font-weight: bold;
+  }
+}
