@@ -28,7 +28,7 @@ export default class GeoReview {
   }
 
   async callApi(method, body = {}) {
-    const res = await fetch(`https://geo-review-backend.onrender.com/${method}`, {
+    const res = await fetch(`/${method}`, {
       method: 'post',
       body: JSON.stringify(body),
       headers: {

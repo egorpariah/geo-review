@@ -1,13 +1,13 @@
 {
-  "name": "geo-review-frontend",
+  "name": "geo-review",
   "version": "1.0.0",
-  "description": "Отзывы на карте с помощью Yandex Maps API и Node.js сервера",
+  "description": "Отзывы на карте с помощью Yandex Maps API и сервера на Express.js",
   "main": "index.mjs",
   "scripts": {
     "deploy": "npm run build",
     "build": "webpack --mode production --progress",
     "serve": "webpack serve --mode development --open --progress",
-    "api": "node ../geo-review-backend/index.mjs",
+    "api": "node ./server/index.mjs",
     "start": "npm-run-all --parallel serve api"
   },
   "repository": {
@@ -37,5 +37,8 @@
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0",
     "webpack-dev-server": "^4.10.1"
+  },
+  "dependencies": {
+    "express": "^4.18.1"
   }
 }
