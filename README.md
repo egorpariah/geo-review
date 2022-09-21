@@ -7,11 +7,10 @@
 - Склонируйте репозиторий
 - Запустите `npm install` в корне локального репозитория
 - Запустите `npm start`
-- Откройте [http://localhost:8080/](http://localhost:8080/)
 
 ## Скрипты
 
-`npm run build` — сборка в prod-режиме
-`npm run serve` — запуск webpack-сервера в dev-режиме
-`npm run api` — запуск сервера Node.js
-`npm start` — запуск сервера Node.js и webpack-сервера в dev-режиме
+- `npm run build` — сборка в prod-режиме
+- `npm run watch` — запуск webpack-сервера в dev-режиме
+- `npm run serve` — запуск сервера Node.js
+- `npm start` — запуск сервера Node.js и webpack-сервера в dev-режиме
